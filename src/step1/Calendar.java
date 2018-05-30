@@ -20,11 +20,17 @@ public class Calendar {
 					case 1 : case 3 : case 5 : case 7 : case 8 : case 10 : case 12 : endDay ="31"; break;
 					case 2 : endDay ="28"; break;
 					case 4 : case 6 : case 9 : case 11: endDay ="30"; break;
-					default : endDay = "다시 입력해주세요";
+					default : endDay = "다시 입력해주세요";break;
 					}
-					System.out.println(endDay);
-				break;
-				default : System.out.println("Wrong!!!"); return;
+				
+				
+					if(endDay.equals("다시 입력해주세요")){
+						System.out.println(endDay);
+					} else {
+						System.out.println(endDay + "일 까지 있습니다.");	
+					}
+					break;
+				default : System.out.println("Wrong!!!"); break;
 			}
 		}
 	}

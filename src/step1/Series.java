@@ -11,7 +11,7 @@ public class Series {
 			int sum=0;
 			String result = "";
 			switch(sc.nextInt()){
-				case 0 : System.out.println("종료"); break;
+				case 0 : System.out.println("종료"); return;
 				case 1 : 
 					System.out.println("첫번째 숫자를 입력해주세요");
 					int input1 = sc.nextInt();
@@ -35,10 +35,10 @@ public class Series {
 							result +=  i + "+";
 						}
 					} 
-					break;	
-				default : System.out.println("Error");continue;
+					System.out.println(result+sum); break;	
+				default : System.out.println("Error");break;
 			}	
-			System.out.println(result+sum);	
+				
 		}
 	}
 }
