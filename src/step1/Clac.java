@@ -3,7 +3,6 @@ import java.util.Scanner;
 /**
  두수를 입력받아서 계산하는 계산기
  * */
-
 public class Clac {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -32,11 +31,9 @@ public class Clac {
 				if(!result.equals("Error")){
 					result = "Result > " + num1 + opInput + num2 + "=" + sum;
 				}
-				System.out.println(result);	
-				break;
-				
+				System.out.println(result);	 break;
 				default : System.out.println("Wrong!!!"); return;
-				}	
+			}	
 		}
 	}
 }

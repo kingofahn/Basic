@@ -6,7 +6,6 @@ import java.util.Scanner;
  할인가격을 알려주고
  10%이상이면 안판다.  
  * */
-
 public class HowMuch {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);

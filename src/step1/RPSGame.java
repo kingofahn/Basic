@@ -1,5 +1,8 @@
 package step1;
 import java.util.Scanner;
+/**
+ 두 플레이어가 가위바위로를 해서 승리를 결정짓도록 출력
+ */
 public class RPSGame {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
@@ -21,7 +24,7 @@ public class RPSGame {
 				} else{
 				System.out.println("========== Draw!!!  ==========");
 				}	
-			break;
+				break;
 			}
 		}
 	}

@@ -9,7 +9,6 @@ import java.util.Scanner;
 평년이라 해도 다시 400으로 나눠 떨어지는 연도는 윤년이다.
 예시) 2000년 과 2016 년을 입력하면 윤년으로 나옴
  * */
-
 public class CheckGender {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);

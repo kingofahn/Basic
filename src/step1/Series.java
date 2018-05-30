@@ -34,13 +34,11 @@ public class Series {
 						}else{
 							result +=  i + "+";
 						}
-					}
+					} 
 					break;	
 				default : System.out.println("Error");continue;
 			}	
 			System.out.println(result+sum);	
 		}
-
 	}
-
 }
