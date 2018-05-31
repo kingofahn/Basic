@@ -21,13 +21,15 @@ public class EvenSum {
 				int num1 = sc.nextInt();
 				System.out.println("숫자를 입력해주세요");
 				int num2 = sc.nextInt();
-				if(num1>num2) {
-					max = num1;
-					min = num2;
-				} else {
-					max = num2;
-					min = num1;
-				}
+				
+					if(num1>num2) {
+						max = num1;
+						min = num2;
+					} else {
+						max = num2;
+						min = num1;
+					}
+					
 				for(int i=min; i<=max; i++) {
 					sum+=i;
 					if(i==max) {

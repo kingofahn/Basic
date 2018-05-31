@@ -10,10 +10,8 @@ import java.util.Scanner;
 public class SequenceSum {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		while(true) {
 		int min=0, max=0; sum=0;
-		
 		switch(sc.nextInt()) {
 		case 0: System.out.println("종료합니다"); return;
 		case 1: 
@@ -21,9 +19,7 @@ public class SequenceSum {
 			int num1 = sc.nextInt();
 			System.out.println("숫자2를 입력해주세요.");
 			int num2 = sc.nextInt();
-			
 			if(num1>num2) {
-				
 			} else {
 				
 			}
