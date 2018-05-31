@@ -39,6 +39,7 @@ public class GradeReport{
 						break;
 					}
 					int avg = (kor + eng + math)/3;
+					
 					String hak = "";
 					if(avg >= 90){
 						hak = "A";

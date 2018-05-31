@@ -8,11 +8,11 @@ public class Series {
 		Scanner sc = new Scanner(System.in);
 		while(true){
 			System.out.println("0.종료 1.시작");
-			int sum=0;
-			String result = "";
 			switch(sc.nextInt()){
 				case 0 : System.out.println("종료"); return;
-				case 1 : 
+				case 1 :
+					int sum=0;
+					String result = "";
 					System.out.println("첫번째 숫자를 입력해주세요");
 					int input1 = sc.nextInt();
 					System.out.println("첫번째 숫자를 입력해주세요");

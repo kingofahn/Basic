@@ -13,11 +13,11 @@ public class BMI {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		while(true){
-		String result = "";
 		System.out.print("0.종료 1.시작");
 		switch(sc.nextInt()){
 			case 0 :System.out.println("종료"); return;
-			case 1 :System.out.println("시작"); 
+			case 1 :System.out.println("시작");
+				String result = "";
 				System.out.print("키를 입력하세요(cm) > : ");
 				double height = sc.nextDouble();
 				height = height/100;

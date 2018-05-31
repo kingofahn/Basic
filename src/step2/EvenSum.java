@@ -14,32 +14,32 @@ public class EvenSum {
 			String result = "";
 			System.out.println("0. end   1. start");
 			switch(sc.nextInt()) {
-			case 0 : System.out.println("종료합니다"); return;
-			case 1 : 
-				int sum=0, min = 0, max = 0;
-				System.out.println("숫자를 입력해주세요");
-				int num1 = sc.nextInt();
-				System.out.println("숫자를 입력해주세요");
-				int num2 = sc.nextInt();
-				
-					if(num1>num2) {
-						max = num1;
-						min = num2;
-					} else {
-						max = num2;
-						min = num1;
-					}
+				case 0 : System.out.println("종료합니다"); return;
+				case 1 : 
+					int sum=0, min = 0, max = 0;
+					System.out.println("숫자를 입력해주세요");
+					int num1 = sc.nextInt();
+					System.out.println("숫자를 입력해주세요");
+					int num2 = sc.nextInt();
 					
-				for(int i=min; i<=max; i++) {
-					sum+=i;
-					if(i==max) {
-						result += i +"=";
-					} else {
-						result += i +"+";
+						if(num1>num2) {
+							max = num1;
+							min = num2;
+						} else {
+							max = num2;
+							min = num1;
+						}
+						
+					for(int i=min; i<=max; i++) {
+						sum+=i;
+						if(i==max) {
+							result += i +"=";
+						} else {
+							result += i +"+";
+						}
 					}
-				}
-				System.out.println(result + sum); break;
-			default :System.out.print("error"); break;
+					System.out.println(result + sum); break;
+				default :System.out.print("error"); break;
 			}
 		}
 	}
