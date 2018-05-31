@@ -20,11 +20,14 @@ public class LeapYear {
 					String result ="";
 					System.out.println("년도 입력해주세요");
 					int year = sc.nextInt();
-					if(year%4==0 && year%100!=0 || year%400==0 ){
-					result="윤년";
-					} else {
-					result="평년";
-					}
+					result=(year%4==0 && year%100!=0 || year%400==0 )? "윤년" : "평년" ;
+							/*
+							if(year%4==0 && year%100!=0 || year%400==0 ){
+							result="윤년";
+							} else {
+							result="평년";
+							}
+							*/
 					System.out.println(result); break;
 				default : System.out.println("Wrong!!!"); continue;
 			}

@@ -12,26 +12,29 @@ import java.util.Scanner;
 public class SequenceSum {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		while(true) {
-		System.out.println("0:end 1:Start");
-		switch(sc.nextInt()) {
-		case 0: System.out.println("종료합니다"); return;
-		case 1:
-			int min=0, max=0; sum=0;
-			System.out.println("숫자1을 입력해주세요.");
-			int num1 = sc.nextInt();
-			System.out.println("숫자2를 입력해주세요.");
-			int num2 = sc.nextInt();
-			if(num1>num2) {
-			} else {
-				
+		while (true) {
+			System.out.println("0:end 1:Start");
+			switch (sc.nextInt()) {
+			case 0:
+				System.out.println("종료합니다");
+				return;
+			case 1:
+				int min = 0, max = 0;
+				sum = 0;
+				System.out.println("숫자1을 입력해주세요." + "\n");
+				int num1 = sc.nextInt();
+				System.out.println("숫자2를 입력해주세요." + "\n");
+				int num2 = sc.nextInt();
+				if (num1 > num2) {
+				} else {
+
+				}
+
+				break;
+			default:
+				System.out.println("Error");
+				break;
 			}
-			
-			break;
-		default : System.out.println("Error");break;
 		}
-		
-
 	}
-
 }

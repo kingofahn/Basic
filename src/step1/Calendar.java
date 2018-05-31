@@ -25,11 +25,11 @@ public class Calendar {
 					}
 				
 				
-					if(endDay.equals("다시 입력해주세요")){
-						System.out.println(endDay);
-					} else {
-						System.out.println(endDay + "일 까지 있습니다.");	
-					}
+						if(endDay.equals("다시 입력해주세요")){
+							System.out.println(endDay);
+						} else {
+							System.out.println(endDay + "일 까지 있습니다.");	
+						}
 					break;
 				default : System.out.println("Wrong!!!"); break;
 			}

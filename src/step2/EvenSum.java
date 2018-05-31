@@ -17,26 +17,31 @@ public class EvenSum {
 				case 0 : System.out.println("종료합니다"); return;
 				case 1 : 
 					int sum=0, min = 0, max = 0;
-					System.out.println("숫자를 입력해주세요");
+					System.out.print("숫자를 입력해주세요"+ "\n");
 					int num1 = sc.nextInt();
-					System.out.println("숫자를 입력해주세요");
+					System.out.print("숫자를 입력해주세요"+ "\n");
 					int num2 = sc.nextInt();
-					
-						if(num1>num2) {
-							max = num1;
-							min = num2;
-						} else {
-							max = num2;
-							min = num1;
-						}
-						
+						max=(num1>num2)? num1:num2;
+						min=(num1>num2)? num2:num1;
+							/*
+							if(num1>num2) {
+								max = num1;
+								min = num2;
+							} else {
+								max = num2;
+								min = num1;
+							}
+							*/
 					for(int i=min; i<=max; i++) {
 						sum+=i;
-						if(i==max) {
-							result += i +"=";
-						} else {
-							result += i +"+";
-						}
+						result += (i==max)?  i+"=" : i+"+";
+							/*
+							if(i==max) {
+								result += i +"=";
+							} else {
+								result += i +"+";
+							}
+							*/
 					}
 					System.out.println(result + sum); break;
 				default :System.out.print("error"); break;

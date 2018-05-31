@@ -11,22 +11,23 @@ public class Series {
 			switch(sc.nextInt()){
 				case 0 : System.out.println("종료"); return;
 				case 1 :
-					int sum=0;
+					int sum=0, max=0, min=0;
 					String result = "";
 					System.out.println("첫번째 숫자를 입력해주세요");
-					int input1 = sc.nextInt();
+					int num1 = sc.nextInt();
 					System.out.println("첫번째 숫자를 입력해주세요");
-					int input2 = sc.nextInt();
-					int max=0, min=0;
-					
-					if(input1>input2){
-						max = input1;
-						min = input2;
-					} else {
-						max = input2;
-						min = input1;
-					}
-
+					int num2 = sc.nextInt();
+						max=(num1>num2)? num1:num2;
+						min=(num1>num2)? num2:num1;
+									/*
+									if(input1>input2){
+										max = input1;
+										min = input2;
+									} else {
+										max = input2;
+										min = input1;
+									}
+									*/
 					for(int i=min; i<=max; i++){
 						sum += i;
 						if(i==max){
