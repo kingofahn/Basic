@@ -1,4 +1,4 @@
-package practice;
+package afterClassPractice;
 import java.util.Scanner;
 public class Series2 {
 	public static void main(String[] args) {
