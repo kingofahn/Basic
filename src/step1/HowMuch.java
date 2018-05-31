@@ -1,10 +1,17 @@
 package step1;
 import java.util.Scanner;
 /**
-가격과 갯수를 입력 받음
-비싸다고 생각하는 소비자에게 원하는 할인가격이 10% 미만이면
- 할인가격을 알려주고
- 10%이상이면 안판다.  
+"얼마에요?
+100
+100원 입니다.
+몇개 드릴까요?
+5
+5개 주세요
+총 금액은 500원 입니다
+비싸요, 10% 깎아주세요.
+int dc = total / 10;
+total = total - dc;
+그럼 450원만 주세요"
  * */
 public class HowMuch {
 	public static void main(String[] args){

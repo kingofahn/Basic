@@ -1,15 +1,18 @@
 package step1;
 import java.util.Scanner;
-/**
- 국어 영어 수학점수 받아서 학점주고
- 평균 구하는 문제
- a 90이상
- b 80이상
- c 70이상
- d 60이상
- e 50이상
- f 나머지
-  * */
+	/*[요구사항] 평균 점수에 따라 A ~ F 까지 등급을 부여하는
+	프로그램을 작성해 주시오.
+	100 ~ 90 A
+	89 ~ 80 B
+	79 ~ 70 C
+	69 ~ 60 D
+	59 ~ 50 E
+	49 ~ 0 F
+	화면 출력은 다음과 같습니다.
+	********************************
+	| 이름 | 총점 | 평균 등급 |
+	--------------------------------
+	| 홍길동 | 270 | 90 | A |*/
 public class GradeReport{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
