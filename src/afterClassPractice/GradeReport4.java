@@ -4,15 +4,18 @@ import java.util.Scanner;
 
 public class GradeReport4 {
 	public static boolean input(int param) {
-		return (param <= 100 && param >= 100);
+		return (param >= 0 && param <= 100);
 	}
 	
 	public static String[] getTotal(String[] params) {
 		String[] result = new String[10];
-		result[0] = String.valueOf(Integer.parseInt(params[0]) + Integer.parseInt(params[1]) + Integer.parseInt(params[2]);
-		result[1] = String.valueOf(Integer.parseInt(result[0])/3) ;
+		result[0] = String
+				.valueOf(Integer.parseInt(params[0]) + Integer.parseInt(params[1]) + Integer.parseInt(params[2]));
+		result[1] = String.valueOf(Integer.parseInt(result[0]) / 3);
 		return result;
 	}
+
+	
 	
 	public static String[] getGrade(String[] params) {
 		String[] result = new String[10];
@@ -35,7 +38,6 @@ public class GradeReport4 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		while (true) {
 			System.out.println("name?");
 			String name = sc.next();
 			String[] params = new String[10]; 
@@ -49,13 +51,9 @@ public class GradeReport4 {
 				} else {
 					i--;
 				}
+			}
 			String[] arr = getGrade(getTotal(params));
 			
-			System.out.printf(" name : " +  "/%s" + " sum " + "/%s" + " avg : " + "/%s" + " grade " + "/%s", name, arr[0], arr[1], arr[2]);
-				
-			}
-		}
-
+			System.out.printf(" name : " +  "%s" + " sum " + "%s" + " avg : " + "%s" + " grade " + "%s", name, arr[0], arr[1], arr[2]);
 	}
-
 }
