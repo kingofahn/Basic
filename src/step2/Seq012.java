@@ -8,10 +8,11 @@ public class Seq012 {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.println("1:Odd sum 2:Even sum");
-			String result = "";
+			
 			switch (sc.nextInt()) {
 				case 1:
 					int min = 0, max = 0, sum = 0, count=0, totalCount=0;
+					String result = "";
 					System.out.print("숫자1을 입력해주세요." + "\n");
 					int num1 = sc.nextInt();
 					System.out.print("숫자2를 입력해주세요." + "\n");
@@ -45,7 +46,6 @@ public class Seq012 {
 						int num4 = sc.nextInt();
 						max1=(num3>num4)?num3:num4;
 						min1=(num3>num4)?num4:num3;
-						
 							for(int i=min1; i<=max1; i++) {
 								if(i%2!=0) {
 									count1++;
@@ -54,7 +54,6 @@ public class Seq012 {
 							
 						totalCount1= count1; 
 						count1 = 0;
-						
 						for(int i=min1; i<=max1; i++) {
 							if(i%2!=0) {
 								count1++;

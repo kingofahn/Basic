@@ -5,67 +5,76 @@ package afterClassPractice;
 * */
 import java.util.Scanner;
 
-public class Seq012Practice {
+	public class Seq012Practice {
+		public static int[] input(Scanner sc) {
+			int[] result = new int[2];
+			int max = 0, min = 0;
+	
+			System.out.println("Insert number1");
+			int num1 = sc.nextInt();
+			System.out.println("Insert number2");
+			int num2 = sc.nextInt();
+			max = (num1 > num2) ? num1 : num2;
+			min = (num1 > num2) ? num2 : num1;
+			
+			result[0] = max;
+			result[1] =min;
+	
+			return result;
+		}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.println("1.Odd 2.Even");
 			switch (sc.nextInt()) {
 			case 1:
-				int min1 = 0, max1 = 0, sum1 = 0, oddTotal = 0;
-				String result1 = "";
-				System.out.println("Insert number1");
-				int num3 = sc.nextInt();
-				System.out.println("Insert number2");
-				int num4 = sc.nextInt();
-				max1 = (num3 > num4) ? num3 : num4;
-				min1 = (num3 > num4) ? num4 : num3;
-
-				for (int i = min1; i <= max1; i++) {
-					if (i % 2 == 1) {
-						sum1 = i++;
-					}
-				}
-				oddTotal = sum1;
-				sum1 = 0;
-
-				for (int i = min1; i <= max1; i++) {
-					if (i % 2 == 1) {
-						sum1+=i;
-						result1 += (i == oddTotal) ? i + "=" : i + "+";
-					}
-					
-
-				}
-				System.out.println(result1 + sum1);
-				break;
-			case 2:
-				int max = 0, min = 0, sum = 0, evenTotal = 0;
+				int min = 0, max = 0, sum = 0, oddTotal = 0;
 				String result = "";
-				System.out.println("Insert number1");
-				int num1 = sc.nextInt();
-				System.out.println("Insert number2");
-				int num2 = sc.nextInt();
-				max = (num1 > num2) ? num1 : num2;
-				min = (num1 > num2) ? num2 : num1;
+				
+				int[] arr = input(sc);
+				max = arr[0];
+				min = arr[1];
 
 				for (int i = min; i <= max; i++) {
-					if (i % 2 == 0) {
+					if (i % 2 == 1) {
 						sum = i++;
 					}
 				}
-				evenTotal = sum;
+				oddTotal = sum;
 				sum = 0;
 
 				for (int i = min; i <= max; i++) {
-					if (i % 2 == 0) {
+					if (i % 2 == 1) {
 						sum += i;
-						result += (i == evenTotal) ? i + "=" : i + "+";
+						result += (i == oddTotal) ? i + "=" : i + "+";
 					}
 				}
 				System.out.println(result + sum);
-				;
 				break;
+			case 2:
+				max = 0; min = 0; sum = 0; 
+				int evenTotal = 0;
+				result = "";
+				int[] arr1 = input(sc);
+
+				for (int i = min; i <= max; i++) {
+					if (i % 2 == 1) {
+						sum = i++;
+					}
+				}
+				oddTotal = sum;
+				sum = 0;
+
+				for (int i = min; i <= max; i++) {
+					if (i % 2 == 1) {
+						sum += i;
+						result += (i == oddTotal) ? i + "=" : i + "+";
+					}
+				}
+				System.out.println(result + sum);
+				break;
+				
 			default:
 				System.out.println("Error");
 				break;

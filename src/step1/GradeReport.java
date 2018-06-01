@@ -14,7 +14,7 @@ import java.util.Scanner;
 	--------------------------------
 	| 홍길동 | 270 | 90 | A |*/
 public class GradeReport{
-	public static void main(String[] args){
+public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		while(true){
 			System.out.print("0.End 1.Start > ");
