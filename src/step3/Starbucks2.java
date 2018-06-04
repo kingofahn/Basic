@@ -17,24 +17,27 @@ public class Starbucks2 {
 				"3: 카푸치노" +orderPrice[2]+"\n"};
 		while (true) {
 			String option =JOptionPane.showInputDialog("무엇을 주문하시겠습니까?\n"+ menu[1] + menu[2] + menu[3] + menu[0]);
-			JOptionPane.showMessageDialog(null,menu[Integer.parseInt(option)]+"을 선택함");
+
 			switch (Integer.parseInt(option)) {
 			case 0 :
 				JOptionPane.showMessageDialog(null,"Total Price :"+ totalPrice + " 원 입니다.");
 				return;
 			case 1:
+				JOptionPane.showMessageDialog(null,menu[Integer.parseInt(option)]+"을 선택함");
 				cup = JOptionPane.showInputDialog("몇잔 드릴까요");
 				cost = orderPrice[0]*Integer.parseInt(cup);
 				totalPrice +=(getCost(orderPrice[0],Integer.parseInt(cup)));
 				JOptionPane.showMessageDialog(null,cup + "잔을 선택하셨습니다.");
 				break;
 			case 2:
+				JOptionPane.showMessageDialog(null,menu[Integer.parseInt(option)]+"을 선택함");
 				cup = JOptionPane.showInputDialog("몇잔 드릴까요");
 				cost = orderPrice[0]*Integer.parseInt(cup);
 				totalPrice +=(getCost(orderPrice[1],Integer.parseInt(cup)));
 				JOptionPane.showMessageDialog(null,cup + "잔을 선택하셨습니다.");
 				break;
 			case 3:
+				JOptionPane.showMessageDialog(null,menu[Integer.parseInt(option)]+"을 선택함");
 				cup = JOptionPane.showInputDialog("몇잔 드릴까요");
 				cost = orderPrice[0]*Integer.parseInt(cup);
 				totalPrice +=(getCost(orderPrice[2],Integer.parseInt(cup)));
