@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
  */
 public class RPSGame {
 	public static void main(String[] args){
-		int win = 0, lose = 0, draw=0, checkRandom=0, random=0;
+		int win = 0, lose = 0, draw=0, random=0;
 		while(true) {
 			String input = JOptionPane.showInputDialog("0.종료, 1시작");
 			switch(Integer.parseInt(input)) {
@@ -14,8 +14,8 @@ public class RPSGame {
 				return;
 				case 1 : 
 					int input1 = Integer.parseInt(JOptionPane.showInputDialog("===== Rock(1) Scissor(2) Paper(3) ======"));
-					checkRandom = (int) (Math.random()*10/3);
-					int input2=(checkRandom==0)?(int)(Math.random()*10/3):checkRandom;
+					int input2= (int)(Math.random()*3)+1;
+						JOptionPane.showMessageDialog(null,"Computer =" + input2);
 						switch(input1-input2) {
 						case -1 : case 2:JOptionPane.showMessageDialog(null,"Player win");win+=1;break;
 						case 1 : case -2:JOptionPane.showMessageDialog(null,"Player lose");	lose+=1;break;
@@ -26,4 +26,5 @@ public class RPSGame {
 			}
 		}
 	}
+	
 }
