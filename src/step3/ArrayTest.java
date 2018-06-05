@@ -130,7 +130,6 @@ public class ArrayTest {
 				break;
 			default:
 				break;
-
 			}
 		}
 	}

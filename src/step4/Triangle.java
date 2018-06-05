@@ -5,6 +5,7 @@ public class Triangle {
 		int k=0, t=0;
 		int [][] matrix = new int[7][4];
 
+		
 		for(int j=0; j<4;j++) {
 			for(int i=3-t; i<4+t; i++) {
 			System.out.println();
@@ -19,8 +20,5 @@ public class Triangle {
 				System.out.print(matrix[i][j]+"\t");
 			}
 		}
-		
-
 	}
-
 }
