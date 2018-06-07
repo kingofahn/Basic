@@ -28,6 +28,7 @@ public class MagicSquare {
 				System.out.print(S[NR][NC]+"\t");
 			}
 		}
+		System.out.println();
 	}
 }
 

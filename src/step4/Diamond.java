@@ -6,13 +6,11 @@ public class Diamond {
 
 		for(int i=0;i<5;i++) {
 			if(i<3) {
-				System.out.println();
 				for(int j=2-i; j<3+i; j++) {
 					k++;
 					matrix[i][j] = k;
 				}	
 			} else {
-				System.out.println();
 				for(int j=1+t; j<4-t; j++) {
 					k++;
 					matrix[i][j] = k;
@@ -22,9 +20,9 @@ public class Diamond {
 		}
 		
 		for(int i=0; i<5; i++) {
-			System.out.println();
+			System.out.printf("\n");
 			for(int j=0; j<5; j++) {
-				System.out.print(matrix[i][j] + "\t");
+				System.out.printf("%d \t",matrix[i][j]);
 			}
 		}
 	}

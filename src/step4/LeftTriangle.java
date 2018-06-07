@@ -4,7 +4,6 @@ public class LeftTriangle {
 		int[][] matrix = new int[5][5];
 		int k=0;
 		for(int i=0;i<5;i++) {
-			System.out.println("");
 			for(int j=0;j<=i;j++) {
 				k++;
 				matrix[i][j] = k;

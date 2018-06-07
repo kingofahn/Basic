@@ -6,7 +6,6 @@ public class SandGlass {
 		int[][] matrix = new int[5][5];
 		for (int i = 0; i < 5; i++) {
 			if (i < 3) {
-				System.out.println("");
 				for (int j = 0 + x; j < 5 - x; j++) {
 					k++;
 					matrix[i][j] = k;
@@ -14,7 +13,6 @@ public class SandGlass {
 				x++;
 			} else {
 				for (i = 3; i < 5; i++) {
-					System.out.println("");
 					for (int j = 1 - y; j < 4 + y; j++) {
 						k++;
 						matrix[i][j] = k;

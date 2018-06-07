@@ -8,7 +8,6 @@ public class Triangle {
 		
 		for(int j=0; j<4;j++) {
 			for(int i=3-t; i<4+t; i++) {
-			System.out.println();
 				k++;
 				matrix[i][j]=k;
 			}

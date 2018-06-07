@@ -7,7 +7,6 @@ public class RightTriangle {
 			for(int j=4-i; 4-j>=0 ; j++) {
 				k++;
 				matrix[i][j]=k;
-				System.out.println("");
 			}
 		}
 

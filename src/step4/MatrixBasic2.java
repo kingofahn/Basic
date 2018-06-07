@@ -1,6 +1,6 @@
 package step4;
 
-public class MatrixBasic {
+public class MatrixBasic2 {
 	public static void main(String[] args) {
 		int k=0;
 		int [][]  mtx = new int[5][5];
@@ -13,9 +13,10 @@ public class MatrixBasic {
 		
 		for(int i=0; i<5; i++) {
 			for(int j=0; j<5; j++) {
-				System.out.printf("%d\t",mtx[i][j]);
+				System.out.print(mtx[i][j]+"\t");
 			}
-			System.out.printf("\n");
+			System.out.println();
 		}
+		
 	}
 }
