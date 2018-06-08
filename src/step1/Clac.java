@@ -19,7 +19,6 @@ public class Clac {
 					String opInput = sc.next();
 					System.out.print("Input number 2 > ");
 					int num2 = sc.nextInt();
-	
 						switch(opInput){
 							case "+":sum = num1 + num2;break;
 							case "-":sum = num1 - num2;break;
